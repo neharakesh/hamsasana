@@ -9,7 +9,7 @@
 @tailwind utilities;
 
 *{
-background-color: white
+  background-color: white;
 }
 body{
     font-family: "Poppins",sans-serif;

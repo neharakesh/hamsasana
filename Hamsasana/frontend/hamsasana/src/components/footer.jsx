@@ -9,7 +9,7 @@ function Footer() {
     <a className="link link-hover bg-slate-200">Branding</a>
     <a className="link link-hover bg-slate-200">Design</a>
     <a className="link link-hover bg-slate-200">Marketing</a>
-    <a className="link link-hover ">Advertisement</a>
+    <a className="link link-hover bg-slate-200">Advertisement</a>
   </nav> 
   <nav className='bg-slate-200'>
     <h6 className="footer-title bg-slate-200">Company</h6> 
