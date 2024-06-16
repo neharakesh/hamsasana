@@ -1,21 +1,20 @@
 import React from 'react'
-import Navbar from './components/navbar'
-import Banner from './components/banner'
-import Crausel from './components/crausel'
-import Footer from './components/footer'
-import Hometu from './components/hometu'
-
+import Home from '../src/pages/home.jsx'
+import Course from '../src/components/course.jsx'
+import { Route,Routes } from 'react-router-dom'
 function App() {
   return (
     <>
 
-    
+   {/* <Home/>
+    <Course/>*/}
 
-    <Navbar />
-    <Crausel/>
-    <Banner/>
-    <Hometu/>
-    <Footer/>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/Course" element={<Course/>} />
+    </Routes>
+
+    
   
     
 

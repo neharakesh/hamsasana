@@ -3,7 +3,8 @@ import React from 'react'
 function Footer() {
     return (
         <>
-        <footer className="footer p-20 my-50 bg-slate-200  text-base-content">
+        <div className='mt-10'>
+  <footer className="footer p-20 my-50 bg-slate-200  text-base-content">
   <nav className='bg-slate-200'>
     <h6 className="footer-title bg-slate-200 ">Services</h6> 
     <a className="link link-hover bg-slate-200">Branding</a>
@@ -38,6 +39,7 @@ function Footer() {
     </div>
   </nav>
 </footer>
+</div>
         </>
     )
 }

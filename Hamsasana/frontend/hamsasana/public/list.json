@@ -3,30 +3,35 @@
         "id":1,
         "name":"IIT",
         "category":"free" ,
+        "title":"lorem ipsum",
         "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
     },
     {
         "id":2,
         "name":"IIT",
         "category":"Class 11 & 12" ,
+        "title":"lorem ipsum",
         "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
     },
     {
         "id":3,
         "name":"IIT",
         "category":"free" ,
+        "title":"lorem ipsum",
         "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
     },
     {
         "id":4,
         "name":"IIT",
-        "category":"Class 11 & 12" ,
+        "category":"free" ,
+        "title":"lorem ipsum",
         "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
     },
     {
         "id":5,
         "name":"IIT",
         "category":"Class 11 & 12" ,
+        "title":"lorem ipsum",
         "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
     }
 ]
