@@ -8,9 +8,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  background-color: white;
-}
+
 body{
     font-family: "Poppins",sans-serif;
     

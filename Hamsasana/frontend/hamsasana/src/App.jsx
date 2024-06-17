@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../src/pages/home.jsx'
-import Course from '../src/components/course.jsx'
+import Courses from '../src/pages/courses.jsx'
 import { Route,Routes } from 'react-router-dom'
 function App() {
   return (
@@ -8,11 +8,12 @@ function App() {
 
    {/* <Home/>
     <Course/>*/}
-
+    <div className='dark:bg-slate-900 dark:text-white'>
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/Course" element={<Course/>} />
+      <Route path="/Course" element={<Courses/>} />
     </Routes>
+    </div>
 
     
   

@@ -48,13 +48,13 @@ function Hometu() {
     return (
         <>
           
-        <div className='maz-w-screen-2xl container mx-auto md:px-20 px-4'>
+        <div className='maz-w-screen-2xl container mx-auto md:px-20 px-4 bg-white dark:bg-slate-900 dark:text-white'>
               <div>
-              <h1 className='font-semibold text-xl pb-2'>free offred courses</h1>
+              <h1 className='font-semibold text-xl pb-2 justify-center text-center md:text-3xl'>free offred courses</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores perferendis recusandae quaerat quis rerum dignissimos fugit reprehenderit, quae quibusdam tenetur. Velit qui illum inventore eaque voluptate obcaecati tenetur animi!</p>
             </div>
             
-            <div className="slider-container ">
+            <div className="slider-container  ">
       <Slider {...settings}>
         {filterData.map((item)=> (
           <Cards item={item} key={item.id}/>

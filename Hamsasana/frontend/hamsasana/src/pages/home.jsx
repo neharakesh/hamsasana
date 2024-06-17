@@ -8,11 +8,13 @@ import Hometu from '../components/hometu'
 function Home() {
     return (
         <>
+    <div className='bg-white dark:bg-slate-900 '>
     <Navbar />
     <Crausel/>
     <Banner/>
     <Hometu/>
     <Footer/>
+    </div>
     </>
     )
 }
