@@ -1,6 +1,7 @@
 import React from 'react'
 import tech from '../../public/images/tech.jpg'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import Signup from './signup'
 
 
 function Banner() {
@@ -16,7 +17,7 @@ function Banner() {
                         
                     </p>
                     
-                    <button className="btn btn-active btn-secondary hover:scale-105 duration-300">Get Started</button></div>
+                    <Link to="/Signup" className="btn btn-active btn-secondary hover:scale-105 duration-300">Get Started</Link></div>
                     
                     
                     
