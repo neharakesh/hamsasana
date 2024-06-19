@@ -32,7 +32,7 @@ function Navbar() {
         window.addEventListener('scroll',handleScroll)
         return () =>{
             window.removeEventListener('scroll',handleScroll)
-            //console.log("window.scrollY")
+            
         }
     },[])
     const navItems=(
