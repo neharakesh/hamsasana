@@ -7,7 +7,7 @@ import Cards from "../components/cards.jsx"
 
 
 function Hometu() {
-    const filterData=List.filter((data)=>  data.category==="free")
+    const filterData=List.filter((data)=>  data.category==="IIT")
     var settings = {
       dots: true,
       infinite: false,

@@ -17,6 +17,10 @@ try{
         useNewUrlParser:true,
         useUnifiedTopology:true
     });
+    app.on("error",() =>{
+        console.log("err",error);
+        throw error
+    })
     console.log("connected to mongo db")
 }catch(error){
     console.log("error",error)

@@ -8,5 +8,5 @@ const tutorSchema=mongoose.Schema({
     
 
 })
-const Tutor=mongoose.modelNames("Tutor",tutorSchema)
+const Tutor=mongoose.model("Tutor",tutorSchema)
 export default Tutor
