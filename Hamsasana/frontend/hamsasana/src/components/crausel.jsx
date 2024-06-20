@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import img2 from '../../public/images/img2.jpeg'
-import img6 from '../../public/images/img6.jpeg'
-import img7 from '../../public/images/img7.jpeg'
+import img2 from '../../public/images/img2.jpg'
+
+import img3 from '../../public/images/img3.jpg'
 
 import './style.css';
 
@@ -36,8 +36,8 @@ function Crausel() {
             
             <img src={img2} alt="" />
         </SwiperSlide>
-        <SwiperSlide><img src={img6} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={img7} alt="" /></SwiperSlide>
+        
+        <SwiperSlide><img src={img3} alt="" /></SwiperSlide>
         
       </Swiper>
         </>

@@ -1,6 +1,7 @@
 import React ,{useEffect} from 'react'
 import {useState} from 'react'
 import Login from './login';
+import Logo from '../../public/images/logo.jpeg'
 
 function Navbar() {
 
@@ -39,16 +40,16 @@ function Navbar() {
         <>
             
                 <li>
-                    <a href="/"  >Home</a>
+                    <a href="/" className='hover:bg-slate-300 ' >Home</a>
                 </li>
                 <li>
-                    <a href='/course'>Course</a>
+                    <a href='/course' className='hover:bg-slate-300' >Course</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="" className='hover:bg-slate-300' >Contact</a>
                 </li>
                 <li>
-                    <a href="" >About</a>
+                    <a href="" className='hover:bg-slate-300' >About</a>
                 </li>
                 
                 </>
@@ -56,7 +57,7 @@ function Navbar() {
     return (
         <>
     
-    <div className={`navbar max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-600 dark:text-white right-0 left-0 sticky ${
+    <div className={` navbar max-w-screen-2xl container mx-auto md:px-20 px-3 dark:bg-slate-600 dark:text-white right-0 left-0 sticky ${
         sticky?"sticky-navbar dark:bg-slate-600 dark:text-white shadow-md base-bg-200 duration 300 transition-all ease-in-out":""
         }`}>
         <div className="navbar-start dark:bg-slate-600 dark:text-white">
@@ -64,15 +65,19 @@ function Navbar() {
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box  w-52 ">
+                <ul tabIndex={0} className="  menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box  w-52 ">
                 {navItems}
                 </ul>
             </div>
+        
+            <img className="w-20 mt- p-0 " src={Logo} alt="" />
+            
             <a className="btn btn-ghost text-2xl font-bold cursor-pointer dark:bg-slate-600 dark:text-white">Hamsasana</a>
+            
         </div>
         <div className="navbar-end  dark:bg-slate-600 dark:text-white">
         <div className="navbar-center hidden lg:flex dark:bg-slate-600 dark:text-white ">
-            <ul className="menu menu-horizontal px-1 py-4 text-l dark:bg-slate-600 dark:text-white">
+            <ul className=" text-l text-bold justify-center mt-2 menu menu-horizontal px-1 py-4 text-l dark:bg-slate-600 dark:text-white">
                 {navItems}
             </ul>
             <div className='mx-5 py-4 dark:bg-slate-600 dark:text-white '>
