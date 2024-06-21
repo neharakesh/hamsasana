@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 import tutorRoute from './routes/tutor.route.js'
 
 import cors from "cors"
-import tutorRoute from './routes/tutor.route.js'
+
 import userRoute from './routes/user.route.js'
 
 const app = express()
