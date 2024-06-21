@@ -1,13 +1,31 @@
-import React from 'react'
-import List from '../../public/list.json'
+import React, { useEffect, useState } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";0
 import Slider from "react-slick";
+import axios from 'axios';
 import Cards from "../components/cards.jsx"
 
 
 function Hometu() {
-    const filterData=List.filter((data)=>  data.category==="IIT")
+
+    const [tutor,setTutor]=useState([])
+    useEffect(()=>{
+      const getTutor=async()=>{
+        try{
+          const res=await axios.get("http://localhost:4001/tutor")
+          console.log(res.data)
+          setTutor(res.data)
+        }catch(error){
+          console.log(error)
+        }
+      }
+      getTutor()
+    },[])
+
+
+
+    const filterData=tutor.filter((data)=>  data.category==="IIT")
+    console.log(filterData)
     var settings = {
       dots: true,
       infinite: false,
