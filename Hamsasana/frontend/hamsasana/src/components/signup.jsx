@@ -6,7 +6,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Login from './login';
 import { useForm } from 'react-hook-form';
-
+import axios from 'axios';
+import  toast,{ Toaster } from 'react-hot-toast';
 function Signup() {
   const {
     register,
@@ -14,8 +15,25 @@ function Signup() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const userInfo={
+      fullName:data.fullName,
+      emailId:data.emailId,
+      password:data.password
+    }
+    await axios.post("http://localhost:4001/user/signup",userInfo)
+    .then((res)=>{
+      console.log(res.data)
+      if(res.data){
+        toast.success('Logged in successfully');
+      }
+      localStorage.setItem("Users",JSON.stringify(res.data.user))
+    })
+    .catch((err)=>{
+      if(err.response){
+        toast.error("Error:"+err.response.data.message);
+      }
+    })
   };
 
   return (
@@ -30,24 +48,24 @@ function Signup() {
             <label>Email</label>
             <br />
             <input 
-              {...register("email", { required: true })} 
+              {...register("emailId", { required: true })} 
               type="email" 
               placeholder='Enter your email' 
               className='w-80 p-3 border rounded-md outline-none bg-white' 
             />
-            {errors.email && <span className='text-red-500'>This field is required</span>}
+            {errors.emailId && <span className='text-red-500'>This field is required</span>}
           </div>
           {/* Username */}
           <div className='mt-4 space-y-2'>
-            <label>Username</label>
+            <label>FullName</label>
             <br />
             <input 
-              {...register("username", { required: true })} 
+              {...register("fullName", { required: true })} 
               type="text" 
               placeholder='Enter your username' 
               className='w-80 p-3 border rounded-md outline-none bg-white' 
             />
-            {errors.username && <span className='text-red-500'>This field is required</span>}
+            {errors.fullName && <span className='text-red-500'>This field is required</span>}
           </div>
           {/* Password */}
           <div className='mt-4 space-y-2'>

@@ -4,6 +4,7 @@ import Courses from '../src/pages/courses.jsx'
 import { Route,Routes } from 'react-router-dom'
 import Signup from './components/signup.jsx'
 import Login from './components/login.jsx'
+import  { Toaster } from 'react-hot-toast';
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
     
 
     </Routes>
+    <Toaster/>
     </div>
 
     
