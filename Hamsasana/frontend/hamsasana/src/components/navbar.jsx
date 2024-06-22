@@ -67,18 +67,18 @@ function Navbar() {
         }`}>
         <div className="navbar-start dark:bg-slate-600 dark:text-white">
             <div className="dropdown ">
-                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
+                <div tabIndex={0} role="button" className="btn btn-ghost md:hidden ">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
                 <ul tabIndex={0} className="  menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box  w-52 ">
                 {navItems}
                 </ul>
             </div>
-        
-            <img className="w-20 mt- p-0 " src={Logo} alt="" />
+            <div className='flex space-0'>
+            <img className="w-20 " src={Logo} alt="" />
             
-            <a className="btn btn-ghost text-2xl font-bold cursor-pointer dark:bg-slate-600 dark:text-white">Hamsasana</a>
-            
+            <a className="mt-4 text-2xl font-bold cursor-pointer dark:bg-slate-600 dark:text-white">Hamsasana</a>
+            </div>
         </div>
         <div className="navbar-end  dark:bg-slate-600 dark:text-white">
         <div className="navbar-center hidden lg:flex dark:bg-slate-600 dark:text-white ">
@@ -121,7 +121,7 @@ function Navbar() {
         
     
         <div>
-        <a className=" dark:bg-white dark:text-pink-400 bg-black text-white p-2 rounded-md mx-4 cursor-pointer hover:-translate-y-1 hover:scale-110 duration:300s" 
+        <a className=" dark:bg-white dark:text-orange-500 bg-orange-500 text-white p-2 rounded-md mx-4 cursor-pointer hover:-translate-y-1 hover:scale-110 duration:300s" 
         onClick={()=>
             document.getElementById("my_modal_3").showModal()
         }
