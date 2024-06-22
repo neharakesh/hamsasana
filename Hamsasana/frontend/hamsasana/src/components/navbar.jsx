@@ -2,8 +2,13 @@ import React ,{useEffect} from 'react'
 import {useState} from 'react'
 import Login from './login';
 import Logo from '../../public/images/logo.jpeg'
-
+import { useAuth } from '../context/authprovider';
+import Logout from './logout';
 function Navbar() {
+    const [authUser,setAuthUser]=useAuth()
+    
+    
+
 
     const[theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
     const element=document.documentElement;
@@ -110,7 +115,12 @@ function Navbar() {
             </div>
             
         </div>
+        {/*authentication on button*/}
+        {
+            authUser?<Logout/>:
         
+    
+        <div>
         <a className=" dark:bg-white dark:text-pink-400 bg-black text-white p-2 rounded-md mx-4 cursor-pointer hover:-translate-y-1 hover:scale-110 duration:300s" 
         onClick={()=>
             document.getElementById("my_modal_3").showModal()
@@ -119,6 +129,9 @@ function Navbar() {
             Login
         </a>
         <Login/>
+        </div>
+        
+        }
         </div>
         </div>
         
