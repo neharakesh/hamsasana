@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import tech from '../../public/images/tech.jpg'
 import { Link } from 'react-router-dom'
-import Signup from './signup'
+
 import Lottie from 'lottie-react'
 import aos from "aos"
 import loti3 from '../../public/images/loti3.json'
-import loti5 from '../../public/images/loti5.json'
 
 import 'aos/dist/aos.css'
 import { Autoplay } from 'swiper/modules'
@@ -62,7 +61,7 @@ function Banner() {
                     </div>
                     */}
                     </div>
-                    
+                
                     
                     
                     </div>
