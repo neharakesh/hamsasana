@@ -7,7 +7,7 @@ import Cards from "../components/cards.jsx"
 
 
 function Hometu() {
-
+  
     const [tutor,setTutor]=useState([])
     useEffect(()=>{
       const getTutor=async()=>{
@@ -81,7 +81,7 @@ function Hometu() {
       </Slider>
     </div>
     </div>
-        </>
+        </> 
     )
 }
 

@@ -51,7 +51,7 @@ function Navbar() {
                     <a href='/course' className='hover:bg-slate-300' >Course</a>
                 </li>
                 <li>
-                    <a href="" className='hover:bg-slate-300' >Contact</a>
+                    <a href="/contact" className='hover:bg-slate-300' >Contact</a>
                 </li>
                 <li>
                     <a href="" className='hover:bg-slate-300' >About</a>

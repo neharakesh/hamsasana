@@ -59,7 +59,7 @@ function Cards({item}) {
     <div className='front' onClick={flipCard}>
       
     
-<div className="card w-96 bg-white border-slate-950 border-8 shadow-xl my-3 p-3 hover:scale-105 duration-200 dark:bg-slate-600 cursor-pointer dark:border-slate-100">
+<div className="card w-96 bg-white border-slate-950 border-0 shadow-2xl my-3 p-3 hover:scale-105 duration-200 dark:bg-slate-600 cursor-pointer dark:border-slate-100">
   <figure><img src={item.image} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
