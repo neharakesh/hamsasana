@@ -27,10 +27,10 @@ function Contact() {
     return (
         <>
         <form ref={form} >
-        <div className='bg-slate-100  dark:bg-slate-900 dark:text-white max-w-screen  container  md:px-20  md:flex-col'>
+        <div className='bg-slate-100  dark:bg-slate-900 dark:text-white max-w-screen  container  md:px-20 px-2  md:flex-col'>
         <h1 className='font-bold  text-left px-8 text-3xl mt-6 '>Contact Us</h1>
             <div className=' flex flex-col md:flex-row  bg-slate-100 dark:bg-slate-900 dark:text-white mt-0 justify-center'>
-            <div className=' bg-slate-100 dark:bg-slate-900 dark:text-white   md:flex-row  w-full  md:w-1/2 md:mt-10 mt-12  justify-center grid grid-flow-col'>
+            <div className=' bg-slate-100 dark:bg-slate-900 dark:text-white  px-2 md:flex-row  w-full  md:w-1/2 md:mt-10 mt-12  justify-center grid grid-flow-col'>
             
               <Lottie  loop={true} autoplay={true} animationData={contact} />
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../components/contact'
+import Contact from '../components/contact.jsx'
 import Footer from '../components/footer.jsx'
 import Navbar from '../components/navbar.jsx'
 
