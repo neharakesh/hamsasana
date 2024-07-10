@@ -42,7 +42,7 @@ function Signup() {
   };
 
   return (
-    <div className='flex h-screen justify-center items-center'>
+    <div id='sign' className='flex h-screen justify-center items-center'>
       <div className="bg-white border-2 text-black shadow-md rounded-md p-8 modal-box">
         <form onSubmit={handleSubmit(onSubmit)}>
           {/* Close button */}

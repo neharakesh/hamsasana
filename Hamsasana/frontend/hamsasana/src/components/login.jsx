@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import  toast,{ Toaster } from 'react-hot-toast';
+import Choice from './choice';
 
 
 function Login() {
@@ -86,16 +87,22 @@ function Login() {
               <div className='flex justify-around mt-4'>
                 <button
                   type="submit"
-                  className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'
+                  className='bg-orange-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'
                 >
                   Login
                   
                 </button>
-                <p className='font-bold'>
-                  Not registered?{' '}
-                  <Link to="/Signup" className='underline text-blue-500 cursor-pointer'>Signup</Link>
-                </p>
               </div>
+                <p className='font-bold px-36 mt-4 '>
+                  Not registered?{' '}
+                
+                            <a className=" text-orange-500 underline cursor-pointer" onClick={() => document.getElementById("my_modal_2").showModal()}>
+                                signup
+                            </a>
+                            <Choice />
+                    
+                </p>
+              
           </form>
           </div>
         </dialog>
