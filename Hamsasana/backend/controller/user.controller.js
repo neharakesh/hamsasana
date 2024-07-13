@@ -3,7 +3,7 @@ import User from '../modal/user.modal.js'
 import bcryptjs from 'bcryptjs'
 export const signup=async (req,res)=>{
     try{
-        const {fullName,emailId,password}=req.body;
+        const {fullName,emailId,password,mobileNum}=req.body;
         const user= await User.findOne({emailId})
         if(user){
             return res.status(400).json({message:"user already exist"})
@@ -13,14 +13,16 @@ export const signup=async (req,res)=>{
         const createdUser=new User({
             fullName:fullName,
             emailId:emailId,
-            password:hashPassword
+            password:hashPassword,
+            mobileNum:mobileNum
         
         })
         await createdUser.save()
         res.status(201).json({message:"user created successfully",user:{
             _id:createdUser._id,
             fullName:createdUser.fullName,
-            email:createdUser.emailId
+            email:createdUser.emailId,
+            mobileNum:mobileNum
         }})
     }catch(error){
         console.log("error",error)

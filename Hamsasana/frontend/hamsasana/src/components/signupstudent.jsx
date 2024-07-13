@@ -22,7 +22,8 @@ function Signup() {
     const userInfo={
       fullName:data.fullName,
       emailId:data.emailId,
-      password:data.password
+      password:data.password,
+      mobileNum:data.mobileNum
     }
     await axios.post("http://localhost:4001/user/signup",userInfo)
     .then((res)=>{
@@ -83,6 +84,18 @@ function Signup() {
               className='w-80 p-3 border rounded-md outline-none bg-white' 
             />
             {errors.password && <span className='text-red-500'>This field is required</span>}
+          </div>
+          {/*mobile*/}
+          <div className='mt-4 space-y-2'>
+            <label>Mobile NO.</label>
+            <br />
+            <input 
+              {...register("mobileNum", { required: true })} 
+              type=""
+              placeholder='Enter your Mobile Number' 
+              className='w-80 p-3 border rounded-md outline-none bg-white' 
+            />
+            {errors.mobileNum && <span className='text-red-500'>This field is required</span>}
           </div>
           {/* Button */}
           <div className='flex justify-around mt-4'>
