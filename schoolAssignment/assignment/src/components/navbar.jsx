@@ -52,7 +52,7 @@ function Navbar() {
                 <a href="/contact" className='hover:bg-slate-300'>Contact</a>
             </li>
             <li>
-                <a href="/about" className='hover:bg-slate-300'>About</a>
+                <a href="/about" className='hover:bg-slate-300'>Aboutus</a>
             </li>
         </>
     );
