@@ -4,6 +4,7 @@ import Courses from '../src/pages/courses.jsx'
 
 import { Navigate, Route,Routes } from 'react-router-dom'
 import Signup from './components/signupstudent.jsx'
+import Signupteacher from './components/signupteacher.jsx'
 import  { Toaster } from 'react-hot-toast';
 import { useAuth } from './context/authprovider.jsx'
 import Contactus from './pages/contactus.jsx'
@@ -24,6 +25,7 @@ function App() {
       <Route path="/Signup" element={<Signup/>} />
       <Route path="/Contact" element={<Contactus/>} />
       <Route path="/About" element={<Aboutus/>} />
+      <Route path="/SignupTeacher" element={<Signupteacher/>} />
       
 
     

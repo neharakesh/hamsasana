@@ -29,7 +29,7 @@ function Choice() {
     <a>
     
 
-    <Link to="/Signup" className=" bg-orange-300 px-28 py-4 rounded-lg hover:bg-orange-500 hover:scale-105 duration-300" >Signup As Teacher</Link>
+    <Link to="/Signupteacher" className=" bg-orange-300 px-28 py-4 rounded-lg hover:bg-orange-500 hover:scale-105 duration-300" >Signup As Teacher</Link>
     
     
     

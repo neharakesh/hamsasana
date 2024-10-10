@@ -1,19 +1,25 @@
+import Teacher from "../modal/teacher.modal.js";
 import bcrypt from 'bcryptjs/dist/bcrypt.js';
-import User from '../modal/user.modal.js'
+
 import bcryptjs from 'bcryptjs'
-export const signup=async (req,res)=>{
+export const signupTeacher= async (req,res)=>{
     try{
-        const {fullName,emailId,password}=req.body;
-        const user= await User.findOne({emailId})
-        if(user){
+        const {fullName,emailId,mobileNum,description,subject,link,details,password}=req.body;
+        const teacher= await Teacher.findOne({emailId})
+        if(teacher){
             return res.status(400).json({message:"user already exist"})
         }
         //encrypting password
         const hashPassword=await bcryptjs.hash(password,10)
-        const createdUser=new User({
+        const createdUser=new Teacher({
             fullName:fullName,
             emailId:emailId,
             password:hashPassword,
+            mobileNum:mobileNum,
+            description:description,
+            subject:subject,
+            link:link,
+            details:details,
             password:password
         
         })
@@ -22,7 +28,11 @@ export const signup=async (req,res)=>{
             _id:createdUser._id,
             fullName:createdUser.fullName,
             email:createdUser.emailId,
-            
+            mobileNum:createdUser.mobileNum,
+            description:createdUser.description,
+            subject:createdUser.subject,
+            link:createdUser.link,
+            details:createdUser.details,
             password:createdUser.password
         }})
     }catch(error){
@@ -36,12 +46,12 @@ export const signup=async (req,res)=>{
 export const login=async (req,res)=>{
     try{
         const {emailId,password}=req.body;
-        const user=await User.findOne({emailId});
+        const teacher=await Teacher.findOne({emailId});
         const isMatch= await bcryptjs.compare(password,user.password)
-        if(!user || !isMatch){
+        if(!teacher || !isMatch){
             return res.status(400).json({message:"invalid username or password"})
         }else{
-            res.status(200).json({message:"logged in successfully",user:{
+            res.status(200).json({message:"logged in successfully",teacher:{
             _id:user._id,
             fullName:user.fullName,
             emailId:user.emailId
@@ -51,3 +61,4 @@ export const login=async (req,res)=>{
         console.log("error",error)
     }
 }
+

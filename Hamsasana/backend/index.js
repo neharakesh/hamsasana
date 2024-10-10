@@ -6,7 +6,7 @@ import tutorRoute from './routes/tutor.route.js'
 import cors from "cors"
 
 import userRoute from './routes/user.route.js'
-
+import teacherRoute from './routes/teacher.route.js'
 const app = express()
 
 app.use(cors())
@@ -37,6 +37,7 @@ try{
 //defining routes
 app.use("/tutor",tutorRoute)
 app.use("/user",userRoute)
+app.use("/teacher",teacherRoute)
 
 
 app.listen(PORT, () => {
