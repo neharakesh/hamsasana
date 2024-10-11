@@ -5,10 +5,10 @@ import Timeline from './timeline'
 function About() {
     return (
         <>
-        <div>
+        <div className='bg-white gap-5'>
         <div className='max-w-screen-2xl container mx-auto md:px-20 px-2 flex md:mt-4 flex-col md:flex-row bg-white mt-10 mb-10 dark:bg-slate-900 dark:text-white md:space-x-40'>
         
-        <div className='w-full   md:mt-14 mt-12 md:w-1/3 justify-center grid grid-flow-col'>
+        <div className='w-full   md:mt-14 mt-12 md:w-1/3 justify-center grid grid-flow-col bg-white'>
             <img className='w-25 align-super' src={stu1} alt="" />
         </div>
         <div className='w-full  md:w-1/2 md:mt-32 mt-12 justify-center grid grid-flow-col'>
@@ -27,13 +27,13 @@ function About() {
         </div>
         </div>
         </div>
-        <div className='bg-white'>
-            <h1 className='text-4xl font-bold text-orange-500 flex justify-center'>Historical Events..</h1>
+        <div className=' dark:bg-gray-900 bg-white'>
+            <h1 className='text-4xl font-bold text-orange-500 flex justify-center '>Historical Events..</h1>
             <Timeline/>
         </div>
-        <div>
-        <h1 className='text-4xl font-semibold text-orange-500 flex justify-center underline'>Our vision</h1>
-        <p className='m-10 text-xl '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam laboriosam aspernatur sequi possimus inventore omnis nisi nesciunt obcaecati hic repellat. Consequatur consectetur natus provident odio ipsum. Exercitationem molestias explicabo molestiae.</p>
+        <div className='bg-white dark:bg-gray-900 mt-8'>
+        <h1 className='text-4xl font-semibold text-orange-500 flex justify-center underline dark:bg-gray-900'>Our vision</h1>
+        <p className='m-10 text-xl dark:bg-gray-900'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam laboriosam aspernatur sequi possimus inventore omnis nisi nesciunt obcaecati hic repellat. Consequatur consectetur natus provident odio ipsum. Exercitationem molestias explicabo molestiae.</p>
         </div>
         </>
     )

@@ -5,7 +5,7 @@ import Cards from './cards'
 function Facultyinfo() {
     return (
        <>
-       <div>
+       <div >
 
        <Cards/>
        </div>

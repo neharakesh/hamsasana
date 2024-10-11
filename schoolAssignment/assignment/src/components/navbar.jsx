@@ -71,7 +71,7 @@ function Navbar() {
                     </div>
                     <div className='flex space-0'>
                         <img className="w-20" src={Logo} alt="" />
-                        <a className="mt-4 text-2xl font-bold cursor-pointer dark:bg-slate-600 dark:text-white">Springdale Public School</a>
+                        <a className="mt-4 text-2xl font-bold cursor-pointer dark:bg-slate-600 dark:text-white">Hamsasana</a>
                     </div>
                 </div>
                 <div className="navbar-end dark:bg-slate-600 dark:text-white">

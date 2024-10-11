@@ -25,7 +25,7 @@ function Academicsection() {
         <div className=''>
             <div>
                 <h1 className='text-4xl text-orange-500  text-bold flex justify-center mt-4 font-bold underline'>
-                    Crriculum Activities
+                Curricular activities
                 </h1>
             </div>
             <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 flex md:mt-4 flex-col md:flex-row bg-white mt-0 mb-10 dark:bg-slate-900 dark:text-white'>
@@ -60,7 +60,7 @@ function Academicsection() {
                     </div>
                 <div className='w-full  md:w-1/2 md:mt-10 mt-4 justify-center grid grid-flow-col'>
                     <div className='space-y-5 '>
-                    <h1 className='text-4xl font-bold' data-aos="fade-up" >Secondary<span className='text-orange-500'>Grades 6-10!!!</span></h1>
+                    <h1 className='text-4xl font-bold' data-aos="fade-up" >Secondary: <span className='text-orange-500'>Grades 6-10!!!</span></h1>
                     <h2 className='text-2xl  font-bold md:justify-center'data-aos="fade-up" >Subjects:</h2>
                     <p className='text-xl' data-aos="fade-up" > English, Mathematics, Science (Physics, Chemistry, Biology), Social Studies, Computer Science, Physical Education, Art
                     </p>
@@ -131,8 +131,8 @@ function Academicsection() {
                         Teaching Methodalogies...
                     </h1>
                 </div>
-                <div className='flex-row mb-16'>
-                    <p className='text-2xl justify-center flex mt-5 mb-5 md:justify-center m-6' data-aos="fade-up"> "We use a blend of traditional and modern teaching techniques to cater to different learning styles."
+                <div className='flex-row mb-16 justify-center'>
+                    <p className='text-2xl justify-center flex mt-5 mb-5 md:justify-center m-8' data-aos="fade-up"> "We use a blend of traditional and modern teaching techniques to cater to different learning styles."
                     </p>
                     <p className='text-xl justify-center flex mt-5 mb-5 m-6' data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eaque facere a animi minima, reiciendis molestias accusantium exercitationem esse repudiandae necessitatibus consequuntur fugiat sed similique vero dolor unde tempore suscipit.
                     </p>
@@ -148,7 +148,7 @@ function Academicsection() {
                 </h1>
             </div>
             <div>
-            <h1 className='text-2xl font-bold justify-center flex m-5' data-aos="fade-up" >We Offer <span className='text-orange-500'>Best </span> Educational Resources</h1>
+            <h1 className='text-2xl font-bold justify-center flex m-5 gap-5' data-aos="fade-up" >We Offer <span className='text-orange-500 gap-5'>Best </span> Educational Resources</h1>
             </div>
                 <div>
                     <Swiperslider/>

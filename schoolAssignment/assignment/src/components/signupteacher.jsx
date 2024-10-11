@@ -4,6 +4,7 @@ import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import Login from './login';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import img1 from '../../public/images/teach3.jpeg'
 import  toast,{ Toaster } from 'react-hot-toast';
 
 function Signupteacher() {
@@ -50,8 +51,8 @@ function Signupteacher() {
         <h1 className='font-bold text-left px-8 text-3xl mt-4'>Sign up</h1>
     <div id='sign' className='flex flex-col md:flex-row bg-slate-100 dark:bg-slate-900 dark:text-white mt-0 '>
         
-        <div className='bg-white dark:bg-slate-900 dark:text-white px-2 md:flex-row w-full md:w-1/2 md:mt-10 mt-12 justify-center grid grid-flow-col'>
-        
+        <div className=' dark:bg-slate-900 dark:text-white px-2 md:flex-row w-full md:w-1/2 md:mt-10 mt-12 justify-center grid grid-flow-col'>
+        <img src={img1} alt="" className=' h-auto flex justify-center'/>
         </div>
       <div className="bg-slate-100 dark:bg-slate-900 dark:text-white px-2 md:flex-row w-full md:w-1/2 md:mt-10 mt-12  grid grid-flow-col">
         <form onSubmit={handleSubmit(onSubmit)}>
