@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name":"Sumit Shrama ",
+        "category":"IIT" ,
+        "title":["lorem"," lorem"],
+        "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
+    },
+    {
+        "id":2,
+        "name":"Saurabh roy",
+        "category":"NEET" ,
+        "title":"lorem ipsum",
+        "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
+    },
+    {
+        "id":3,
+        "name":"Ayush Awathi",
+        "category":"IIT" ,
+        "title":"lorem ipsum",
+        "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
+    },
+    {
+        "id":4,
+        "name":"Surbhi Jain",
+        "category":"IIT" ,
+        "title":"lorem ipsum",
+        "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
+    },
+    {
+        "id":5,
+        "name":"Prakriti Mishra",
+        "category":"UPSC" ,
+        "title":"lorem ipsum",
+        "image":"https://tse2.mm.bing.net/th?id=OIP.RPDH43-x2hs7acMJF7L8VAHaHa&pid=Api&P=0&h=180"
+    }
+]
