@@ -12,7 +12,7 @@ function Cards() {
   </figure>
   <div className="card-body ">
     <h2 className="card-title">
-      Shoes!
+      Mr. Omkar Sharma
       <div className="badge badge-secondary ">Power</div>
     </h2>
     <p>Knowledge is the key to success</p>
@@ -31,7 +31,7 @@ function Cards() {
   </figure>
   <div className="card-body">
     <h2 className="card-title">
-      Shoes!
+      Mrs Poonam Ji
       <div className="badge badge-secondary">Power</div>
     </h2>
     <p>Knowledge is the key to success</p>
@@ -50,7 +50,7 @@ function Cards() {
   </figure>
   <div className="card-body">
     <h2 className="card-title">
-      Shoes!
+      Mr. Raman Kumar
       <div className="badge badge-secondary">Power</div>
     </h2>
     <p>Knowledge is the key to success</p>
